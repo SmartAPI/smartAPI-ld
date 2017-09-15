@@ -1,13 +1,6 @@
 {
 	"@context": {
 		"smartapi": "http://purl.org/smartapi/smartapi.jsonld#",
-		"prov": "https://www.w3.org/ns/prov#",
-		"meta": {
-			"@id": "smartapi:Meta",
-			"@type": "@id"
-		},
-		"results": {
-			"@id": "smartapi:Results",
-		}
+		"prov": "https://www.w3.org/ns/prov#"
 	}
 }
