@@ -1,6 +1,33 @@
 {
-	"@context": {
-		"smartapi": "http://purl.org/smartapi/smartapi.jsonld#",
-		"prov": "https://www.w3.org/ns/prov#"
-	}
+   "@context": {
+	"smartapi": "http://purl.org/smartapi/smartapi.jsonld#",
+	"prov": "https://www.w3.org/ns/prov#",
+	"dct": "http://purl.org/dc/terms/",
+	"schema": "http://schema.org/",
+	"pschema": "http://pending.schema.org/",
+    
+	"openapi": {"@id": "smartapi:schema-version","@type": "xsd:string"},
+	"info": {"@id": "schema:about","@type": "@id"},
+	"title": {"@id": "schema:name","@type": "xsd:string"},
+	"description": {"@id": "schema:description","@type": "xsd:string"},
+	"termsOfService": {"@id": "pschema:termsOfService"},
+	"version": {"@id": "schema:version","@type": "xsd:string"},
+	"license": {"@id": "schema:license","@type": "@id"},
+
+	"contact": {"@id": "smartapi:contact","@type": "@id"},
+	"name": {"@id": "schema:name", "@type": "xsd:string"},
+	"url": {"@id": "schema:url", "@type": "xsd:string"},
+	"email": {"@id": "schema:email", "@type": "xsd:string"},
+	
+	"patternProperties": {"@id":"smartapi:patternProperties"},
+	"additionalProperties": {"@id":"smartapi:additionalProperties"},
+    	"paths": {"@id": "smartapi:paths","@type": "@id"},
+
+	"externalDocs": {"@id": "schema:documentation","@type": "@id"},
+	"servers": {"@id": "schema:url","@type": "@id"},
+	"$ref": {"@id": "rdf:type", "@type": "@id"},
+	   
+	"x-id": {"@id": "http://schema.org/identifier","@type":"xsd:string"},
+	"x-organization": {"@id": "http://schema.org/vendor","@type":"xsd:string"}
+   }
 }
